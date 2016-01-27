@@ -43,6 +43,7 @@ Además en función del tipo de acceso que se tenga a los métodos y datos hered
 
 - ###Clase Abstracta:
 	Es aquella que posee métodos que no están definidos dentro de ella y que se definirán en una clase hija.
+
 - ###Clase Concreta:
 	Es una clase que no posee ningún métodod que no esté definido dentro de ella.
 
