@@ -41,9 +41,9 @@ Además en función del tipo de acceso que se tenga a los métodos y datos hered
 -	Herencia protegida: Los datos y métodos públicos y protegidos de la clase madre son protegidos en la clase hija.
 -	Herencia privada:  Los datos y métodos públicos y protegidos de la clase madre son privados en la clase hija.
 
--	###Clase Abstracta:
+- ###Clase Abstracta:
 	Es aquella que posee métodos que no están definidos dentro de ella y que se definirán en una clase hija.
--	###Clase Concreta:
+- ###Clase Concreta:
 	Es una clase que no posee ningún métodod que no esté definido dentro de ella.
 
 ##Polimorfismo
