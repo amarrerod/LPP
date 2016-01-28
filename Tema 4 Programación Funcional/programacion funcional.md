@@ -70,4 +70,4 @@ También se pueden crear clausuras pasando un bloque como parámetro a un métod
 
 
 1. Lloyd, J.W., Practical Advantages of Declarative Programming
-2. [http://emanchado.github.io/camino-mejor-programador/html/ch04.html](http://emanchado.github.io/camino-mejor-programador/html/ch04.html "Lecciones de aprender un lenguaje funcional")
+2. [Lecciones de aprender un lenguaje funcional](http://emanchado.github.io/camino-mejor-programador/html/ch04.html)

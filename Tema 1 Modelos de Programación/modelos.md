@@ -1,7 +1,7 @@
 
 
-#Tema 1: Modelos de Programación.
-
+#Tema 1: [Modelos de Programación][1]
+[1]:http://cs.lmu.edu/~ray/notes/paradigms/
 
 ###¿Por qué hay tantos lenguajes de programación?
 Hay tantos lenguajes de programación debido principalmente a 3 motivos:
@@ -9,6 +9,8 @@ Hay tantos lenguajes de programación debido principalmente a 3 motivos:
 - 	El avance de la ciencia de la computación
 - 	Nuevas necesidades y propósitos específicos
 - 	Poder expresivo de los lenguajes
+
+![Lenguajes de Programación](http://programacion.net/files/article/02022015175942_lenguajes%20programacion.jpg)
 
 ###¿Qué hace que un lenguaje de programación tenga éxito?
 
@@ -20,7 +22,7 @@ Hay tantos lenguajes de programación debido principalmente a 3 motivos:
 -	Ayudas económicas
 
 ###¿Qué es una modelo o paradigma de programación?
-Un modelo o paradigma de programación es una abstracción de un sistema de cómputo.
+Un modelo o paradigma de programación es una abstracción de un sistema de cómputo. El modelo de programación dice lo que debe hacer el sistema.
 Los más importantes son el paradigma ***imperativo y el paradigma declarativo***.
 
 -	El *paradigma imperativo* se caracteriza porque es de más bajo nivel, más cercano a la máquina y donde la programación se realiza especificando todas y cada una de las instrucciones que se tienen que ejecutar en la máquina obtener la solución del problema. En este paradigma podemos encontrar los siguientes lenguajes de programación:
@@ -62,3 +64,5 @@ Un compilador se puede dividir en dos partes, *Front-End* y *Back-End*. El *Fron
 -	Optimización del código
 -	Ensamblador
 -	Linker
+
+![Pasos que sigue el compilador](https://jesyib.files.wordpress.com/2011/11/kjsdf.jpg)
