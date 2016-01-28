@@ -27,14 +27,14 @@ Los más importantes son el paradigma ***imperativo y el paradigma declarativo**
 
 -	El *paradigma imperativo* se caracteriza porque es de más bajo nivel, más cercano a la máquina y donde la programación se realiza especificando todas y cada una de las instrucciones que se tienen que ejecutar en la máquina obtener la solución del problema. En este paradigma podemos encontrar los siguientes lenguajes de programación:
 
-			-	Von Neumann: FORTAN, C
-			-	Scripting: Perl, Ruby, Phyton
-			-	O.O: C++, Java
+	-	Von Neumann: FORTAN, C
+	-	Scripting: Perl, Ruby, Phyton
+	-	O.O: C++, Java
 				
 -	El *paradigma declarativo* se caracteriza por ser de más alto nivel, nos abstraemos más de la máquina en la que se ejecutará el programa, y programamos diciendo lo que queremos resolver pero a nivel de usuario. Nos podemos encontrar los lenguajes:
 
-			- Funcionales: FP, ML, Haskell, Miranda, Lisp
-			- Lógicos: Prolog, Datalog
+	- Funcionales: FP, ML, Haskell, Miranda, Lisp
+	- Lógicos: Prolog, Datalog
 		
 
 
@@ -66,3 +66,9 @@ Un compilador se puede dividir en dos partes, *Front-End* y *Back-End*. El *Fron
 -	Linker
 
 ![Pasos que sigue el compilador](https://jesyib.files.wordpress.com/2011/11/kjsdf.jpg)
+
+
+#¿En qué sentido son los lenguajes de programación de alto nivel mejores que el lenguaje ensamblador?
+Los lenguajes de programación de alto nivel son mejores que el lenguaje ensamblador porque para programar en lenguaje ensamblador hay que saber de antemano en que máquina se va a ejecutar el programa ya que necesitamos usar el juego de instrucciones de la arquitectura para programar en ensamblador, además de ser mucho mas costoso.
+En los lenguajes de alto nivel nos abstraemos más de la máquina en la que se va a ejecutar el programa y nos centramos más en resolver el problema desde un enfoque más cercano al usuario.
+*"No tiene sentido programar en ensamblador si no se sabe en qué máquina se va a ejecutar el programa.*

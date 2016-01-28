@@ -6,11 +6,13 @@
 ##Bloque
 Un bloque en Ruby es un conjunto de código que va entre llaves, o entre un do-end. Se caracteriza porque no es un objeto y porque solo puede ser usado si es pasado como parámetro a un método e invocado desde dentro del método con un *yield*. Además pueden ser devueltos como un resultado.
 
-    { puts ("Esto es un bloque") }
+```ruby
+{ puts ("Esto es un bloque") }
 
-	do 
-		puts ("Esto es un bloque")
-	end
+do 
+	puts ("Esto es un bloque")
+end
+```
 
 ##Iterador
 Un iterador es un mecanismo que nos permite recorrer una estructura sin importar su contenido. Por ejemplo *each* en Ruby.
@@ -22,49 +24,55 @@ La primera vez que uno se encuentra funciones de orden superior puede pensar que
 
 Veamos un ejemplo de lo primero en Ruby. Algunos de los métodos de la clase Array reciben una función como parámetro (en Ruby se los llama bloques), lo que permite escribir código bastante compacto y expresivo:
 
-    # Comprobar si todas las palabras tienen menos de 5 letras
+```ruby
+# Comprobar si todas las palabras tienen menos de 5 letras
 	if words.all? {|w| w.length < 5 }
-   	# ...
+	# ...
 	end
+```
 
 ##Clausura
 Una clausura es un conjunto de código que tiene asociado un ambiente, y el ambiente es el conjunto de variables que estaban definidas en el ámbito en el que se creó la clausura. Para crear clausuras en lenguaje Ruby tenemos que hacerlo a partir de bloques y utilizando o bien la clase *Proc* o el método *lambda* del módulo Kernel.
 La diferencia entre Proc y lambda es que Proc no comprueba el número de parámetros que se le pasan a la clausura y en cambio lambda si, y no deja realizar la llamada o ejecución de la clausura si el número de parámetros no es el correcto. Cuando pasamos un Proc/lambda como parámetro a un método lo hacemos junto con su ambiente, por lo que no ve las variables locales a la función.
 
-	#Esto es un ejemplo de clausura a partir de un bloque que recibe un parámetro
-    a = Proc.new {|x| puts x} 
-	b = lambda {|x| puts x}
+```ruby
+#Esto es un ejemplo de clausura a partir de un bloque que recibe un parámetro
+a = Proc.new {|x| puts x} 
+b = lambda {|x| puts x}
 	
-	#Para ejecutar
-	a.call("Hello World") => "Hello World"
-	b.call("Hello World") => "Hello World"
+#Para ejecutar
+a.call("Hello World") => "Hello World"
+b.call("Hello World") => "Hello World"
 
-	#Proc permite hacer esto
-	a.call("Hello World", "Hola Mundo") => "Hello World"
+#Proc permite hacer esto
+a.call("Hello World", "Hola Mundo") => "Hello World"
 	
-	#En cambio con lambda
-	b.call("Hello World", "Hola Mundo") => `block in <main>': wrong number of arguments (2 for 1) (ArgumentError)
-
+#En cambio con lambda
+b.call("Hello World", "Hola Mundo") =>wrong number of arguments (2 for 1) (ArgumentError)
+```
 
 
 Hay una sintaxis alternativa para definir lambdas que es:
 
-    a = ->(x) {....}
-	a = -> x {}
-	a = -> x do .... end
-	#Variables con valor por defecto	
-	a = -> x,j=0 {}
-	#Definiendo i,j como variables locales a la clausura
-	a = -> (x,y;i,j) {}
+```ruby
+a = ->(x) {....}
+a = -> x {}
+a = -> x do .... end
+#Variables con valor por defecto	
+a = -> x,j=0 {}
+#Definiendo i,j como variables locales a la clausura
+a = -> (x,y;i,j) {}
+```
 
 También se pueden crear clausuras pasando un bloque como parámetro a un método y poniendo un ampersand:
 
-    def create_block(&block)
-		block
-	end
+```ruby
+def create_block(&block)
+	block
+end
 
-	bo = create_block {|arg| puts "The argument is #{arg}"}
-
+bo = create_block {|arg| puts "The argument is #{arg}"}
+```
 
 
 

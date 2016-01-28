@@ -45,7 +45,10 @@ int main(){
 }
 ```
 
-- ###Sentencia go to: 
+-  ###Procedimiento (Subprograma)
+Segmento de código separado del bloque principal que realiza una tarea determina y que puede ser invocado desde el bloque principal o desde cualquier otro procedimiento.
+
+-  ###Sentencia go to: 
 Y que el uso de la sentencia *go to* se considera perjudicial porque el programa se ejecuta secuencialmente hasta que llega a una sentencia go-to que trasfiere el flujo de control del programa incondicionalmente hasta otro punto. Nos genera un código spaghetti, que es un muy difícil de depurar.
 
 
